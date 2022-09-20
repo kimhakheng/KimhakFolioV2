@@ -32,8 +32,6 @@ const earthGeometry = new THREE.SphereGeometry(4, 32, 32);
 const earthTexture = new THREE.TextureLoader().load( '/earthmap1k.jpg' );
 const earthBumpmap = new THREE.TextureLoader().load('/earthbump1k.jpg')
 const earthMaterial = new THREE.MeshPhongMaterial({
-    roughness: 1,
-    metalness: 0,
     map: earthTexture,
     bumpMap: earthBumpmap,
     bumpScale: 0.3
