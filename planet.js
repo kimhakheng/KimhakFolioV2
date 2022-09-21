@@ -122,16 +122,6 @@ earthMesh.position.x = 0;
 cloudMesh.position.x = 0;
 
 
-// handling resizing
-window.addEventListener('resize', () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer();
-}, false);
-
-
-
 // rendering
 function animate(){
     requestAnimationFrame(animate);
