@@ -29,8 +29,8 @@ document.body.appendChild(renderer.domElement);
 const earthGeometry = new THREE.SphereGeometry(4, 32, 32);
 
 // earth material
-const earthTexture = new THREE.TextureLoader().load( '/earthmap1k.jpg' );
-const earthBumpmap = new THREE.TextureLoader().load('/earthbump1k.jpg')
+const earthTexture = new THREE.TextureLoader().load( '/textures/earthmap1k.jpg' );
+const earthBumpmap = new THREE.TextureLoader().load('/textures/earthbump1k.jpg')
 const earthMaterial = new THREE.MeshPhongMaterial({
     map: earthTexture,
     bumpMap: earthBumpmap,
@@ -47,7 +47,7 @@ scence.add(earthMesh)
 const cloudGeometry = new THREE.SphereGeometry(4.1, 32, 32);
 
 // cloud metarial
-const cloudTexture = new THREE.TextureLoader().load('/earthCloud.png');
+const cloudTexture = new THREE.TextureLoader().load('/textures/earthCloud.png');
 const cloudMetarial = new THREE.MeshPhongMaterial({
     map: cloudTexture,
     transparent: true
@@ -59,7 +59,7 @@ scence.add(cloudMesh);
 
 
 // Moon 
-const moonTexture = new THREE.TextureLoader().load('/2k_moon.jpg')
+const moonTexture = new THREE.TextureLoader().load('/textures/2k_moon.jpg')
 
 const moonMesh = new THREE.Mesh(
     new THREE.SphereGeometry(0.25, 32, 32),
@@ -98,7 +98,7 @@ const starGeometry = new THREE.SphereGeometry(80, 64, 64);
 
 // galaxy material
 const starMaterial = new THREE.MeshBasicMaterial({
-    map : new THREE.TextureLoader().load('/galaxy.png'),
+    map : new THREE.TextureLoader().load('/textures/galaxy.png'),
     side: THREE.BackSide
 });
 
