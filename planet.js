@@ -139,7 +139,7 @@ function animate(){
     cloudMesh.rotation.y -= 0.0005;
     starMesh.rotation.y -= 0.0005;
     // moonMesh.rotation.y = 0.1;
-    moonObj.rotateY(-0.01);
+    moonObj.rotateY(-0.005);
     render();
   }
 
