@@ -24,7 +24,6 @@ body{
 }
 
 
-
 .reveal-text,
 .reveal-text::after {
 	-webkit-animation-delay: var(--animation-delay, 2s);
@@ -147,7 +146,7 @@ main {
   padding: 120px 0px;
   
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 1fr);
 }
 
 
